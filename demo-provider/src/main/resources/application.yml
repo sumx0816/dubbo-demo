@@ -1,0 +1,17 @@
+server:
+  port: 8088
+
+spring:
+  dubbo:
+    # 应用名称
+    application:
+      name: demo-provider
+    # 注册中心地址
+    registry:
+      address: zookeeper://127.0.0.1:2181
+    # 协议名称及端口
+    protocol:
+      name: dubbo
+      port: 20880
+    # 服务类包目录
+    scan: com.demo.service
